@@ -76,6 +76,12 @@
         </dependency>
     </dependencies>
 
+
+    <scm>
+        <connection>scm:git:git@github.com:DA1Y1/nebula-mybatis.git</connection>
+        <tag>v0.0.1</tag>
+    </scm>
+
     <build>
         <plugins>
             <plugin>
