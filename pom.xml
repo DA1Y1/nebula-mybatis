@@ -4,7 +4,7 @@
 
     <groupId>io.github.da1y1</groupId>
     <artifactId>nebula-mybatis</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
     <name>nebula-mybatis</name>
     <description>nebula-mybatis</description>
     <url>https://github.com/DA1Y1/nebula-mybatis</url>
@@ -83,7 +83,7 @@
         <connection>scm:git:git@github.com:DA1Y1/nebula-mybatis.git</connection>
         <developerConnection>scm:git:git@github.com:DA1Y1/nebula-mybatis.git</developerConnection>
         <url>https://github.com/DA1Y1/nebula-mybatis</url>
-      <tag>v0.0.3</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <licenses>
