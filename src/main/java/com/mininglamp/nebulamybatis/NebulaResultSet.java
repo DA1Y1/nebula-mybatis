@@ -4,7 +4,7 @@ import com.vesoft.nebula.client.graph.data.ResultSet;
 import com.vesoft.nebula.client.graph.data.TimeWrapper;
 import com.vesoft.nebula.client.graph.data.ValueWrapper;
 import com.vesoft.nebula.jdbc.BaseResultSet;
-import com.vesoft.nebula.jdbc.GraphResultSetMetaData;
+import com.vesoft.nebula.jdbc.NebulaResultSetMetaData;
 
 import java.io.UnsupportedEncodingException;
 import java.sql.*;
@@ -196,7 +196,7 @@ public class NebulaResultSet implements BaseResultSet {
 
     @Override
     public ResultSetMetaData getMetaData() throws SQLException {
-        return new GraphResultSetMetaData(this);
+        return new NebulaResultSetMetaData(this);
     }
 
     /**

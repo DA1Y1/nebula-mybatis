@@ -7,7 +7,7 @@ import com.vesoft.nebula.client.graph.data.Node;
 import com.vesoft.nebula.client.graph.data.PathWrapper;
 import com.vesoft.nebula.client.graph.data.Relationship;
 import com.vesoft.nebula.client.graph.data.ValueWrapper;
-import com.vesoft.nebula.jdbc.GraphStatement;
+import com.vesoft.nebula.jdbc.NebulaStatement;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.executor.resultset.DefaultResultSetHandler;
 import org.apache.ibatis.executor.resultset.ResultSetHandler;
@@ -153,7 +153,7 @@ public class GraphResultSetIntercept implements Interceptor {
                     log.debug("interceptor 消耗时间 ： " + (System.currentTimeMillis() - start));
                     if (isValueWrapper) {
                         com.mininglamp.nebulamybatis.NebulaResultSet graphResultSet = new NebulaResultSet(recordList.size(), Lists.newArrayList(propertiesMap.keySet()), recordList);
-                        GraphStatement graphStatement = new GraphStatement(graphResultSet);
+                        NebulaStatement graphStatement = new NebulaStatement(graphResultSet);
                         Invocation newInvocation = new Invocation(target, invocation.getMethod(), new Object[]{graphStatement});
                         return newInvocation.proceed();
                     }
