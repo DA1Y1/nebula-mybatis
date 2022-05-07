@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.da1y1</groupId>
     <artifactId>nebula-mybatis</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>nebula-mybatis</name>
     <description>nebula-mybatis</description>
     <url>https://github.com/DA1Y1/nebula-mybatis</url>
@@ -84,7 +83,8 @@
         <connection>scm:git:git@github.com:DA1Y1/nebula-mybatis.git</connection>
         <developerConnection>scm:git:git@github.com:DA1Y1/nebula-mybatis.git</developerConnection>
         <url>https://github.com/DA1Y1/nebula-mybatis</url>
-    </scm>
+      <tag>v0.0.3</tag>
+  </scm>
 
     <licenses>
         <license>
